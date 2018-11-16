@@ -9,4 +9,20 @@ pipeline {
             }
         }
     }
+    stage('DeployToStaging'){
+        when{
+            'branch' master
+        }
+        steps{
+            
+        }
+    }
+    stage('DeployToProduction'){
+        when{
+            'branch' master
+        }
+        steps{
+            
+        }
+    }
 }
